@@ -14,7 +14,7 @@ export default function Footer() {
               {siteConfig.tagline}. Built for every body, every cycle, every day.
             </p>
             <div className="mt-6 flex items-center gap-3">
-              <a
+              
                 href={siteConfig.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -23,7 +23,7 @@ export default function Footer() {
               >
                 <Instagram className="h-4.5 w-4.5" />
               </a>
-              <a
+              
                 href={siteConfig.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export default function Footer() {
               >
                 <Twitter className="h-4.5 w-4.5" />
               </a>
-              <a
+              
                 href={`mailto:${siteConfig.contactEmail}`}
                 aria-label="Email Roselle"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-50 text-rose-600 transition-colors hover:bg-rose-100"
@@ -70,7 +70,6 @@ export default function Footer() {
                   {siteConfig.supportEmail}
                 </a>
               </li>
-              <li className="text-plum-400">{siteConfig.companyAddress}</li>
             </ul>
           </div>
         </div>
