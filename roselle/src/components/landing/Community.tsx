@@ -1,10 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, ShieldCheck, Sparkle } from "lucide-react";
+import {
+  MessageCircle,
+  ShieldCheck,
+  Sparkle,
+  Sparkles,
+  HeartHandshake,
+  type LucideIcon,
+} from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
-import { communityStats } from "@/lib/constants";
+import { communityValues } from "@/lib/constants";
+
+const iconMap: Record<string, LucideIcon> = {
+  HeartHandshake,
+  ShieldCheck,
+  Sparkles,
+};
 
 const posts = [
   {
@@ -67,14 +80,22 @@ export default function Community() {
           className="mt-14"
         >
           <GlassCard hover={false} className="grid grid-cols-1 gap-8 p-10 sm:grid-cols-3">
-            {communityStats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="font-display text-4xl font-extrabold text-gradient sm:text-5xl">
-                  {stat.value}
-                </p>
-                <p className="mt-2 text-sm font-medium text-plum-500">{stat.label}</p>
-              </div>
-            ))}
+            {communityValues.map((item) => {
+              const Icon = iconMap[item.icon];
+              return (
+                <div key={item.title} className="text-center sm:text-left">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 sm:mx-0">
+                    <Icon className="h-6 w-6 text-white" strokeWidth={2} />
+                  </div>
+                  <p className="mt-4 font-display text-lg font-bold text-plum-900">
+                    {item.title}
+                  </p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-plum-400">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </GlassCard>
         </motion.div>
 
