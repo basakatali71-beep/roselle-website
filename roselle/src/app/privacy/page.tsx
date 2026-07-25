@@ -216,8 +216,6 @@ export default function PrivacyPage() {
           <p>
             <strong>{siteConfig.companyName}</strong>
             <br />
-            {siteConfig.companyAddress}
-            <br />
             Email:{" "}
             <a href={`mailto:${siteConfig.privacyEmail}`} className="text-rose-600 underline">
               {siteConfig.privacyEmail}
