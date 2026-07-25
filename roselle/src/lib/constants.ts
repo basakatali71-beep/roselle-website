@@ -10,7 +10,7 @@ export const siteConfig = {
   privacyEmail: "privacy@roselle.app",
   twitter: "https://twitter.com/roselleapp",
   instagram: "https://instagram.com/roselleapp",
-  companyName: "Roselle Labs, Inc.",
+  companyName: "Başak Hicret",
   companyAddress: "548 Market Street, PMB 62819, San Francisco, CA 94104, USA",
   lastUpdated: "July 21, 2026",
 };
@@ -127,10 +127,22 @@ export const faqs = [
   },
 ];
 
-export const communityStats = [
-  { value: "2.4M+", label: "People tracking with Roselle" },
-  { value: "180+", label: "Countries represented" },
-  { value: "98%", label: "Feel more understood" },
+export const communityValues = [
+  {
+    title: "Built for women",
+    description: "Every feature is shaped around real cycles, real symptoms, and real conversations — not generic health data.",
+    icon: "HeartHandshake",
+  },
+  {
+    title: "Privacy by design",
+    description: "Your health data is encrypted end to end and never sold or shared with advertisers. Ever.",
+    icon: "ShieldCheck",
+  },
+  {
+    title: "Grounded in care",
+    description: "Developed alongside women's health guidance so every insight feels thoughtful, never clinical.",
+    icon: "Sparkles",
+  },
 ];
 
 export const premiumFeatures = [
