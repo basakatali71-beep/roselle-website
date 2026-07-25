@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Apple, Star } from "lucide-react";
+import { Apple, HeartHandshake } from "lucide-react";
 import Button from "@/components/ui/Button";
 import GradientBackground from "@/components/ui/GradientBackground";
 import PhoneMockup from "@/components/landing/PhoneMockup";
@@ -54,14 +54,10 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="mt-8 flex items-center justify-center gap-6 lg:justify-start">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-rose-500 text-rose-500" />
-                ))}
-              </div>
+            <div className="mt-8 flex items-center justify-center gap-2.5 lg:justify-start">
+              <HeartHandshake className="h-5 w-5 text-rose-500" />
               <p className="text-sm font-medium text-plum-500">
-                Loved by 2.4M+ people worldwide
+                Built specifically for women&rsquo;s health — private by design.
               </p>
             </div>
           </motion.div>
