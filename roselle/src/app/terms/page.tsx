@@ -189,8 +189,8 @@ export default function TermsPage() {
             Questions about these Terms can be sent to{" "}
             <a href={`mailto:${siteConfig.supportEmail}`} className="text-rose-600 underline">
               {siteConfig.supportEmail}
-            </a>{" "}
-            or {siteConfig.companyAddress}.
+            </a>
+            .
           </p>
         </LegalSection>
       </LegalBody>
